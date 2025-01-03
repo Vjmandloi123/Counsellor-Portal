@@ -2,6 +2,7 @@ package in.VijayIt.entity;
 
 import java.util.List;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -25,7 +26,7 @@ public class CounsellorEntity {
 	private String pwd;
 	private String phno;
 	
-	@OneToMany
+	@OneToMany(mappedBy = "counsellor" , cascade = CascadeType.ALL)
 	private List<EnquiryEntity> enquiries;
 
 }
