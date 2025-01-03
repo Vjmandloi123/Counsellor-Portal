@@ -27,6 +27,7 @@ public class EnquiryEntity {
 	private String classMode;
 	private String course;
 	private String enqStatus;
+	private Integer enqId;
 	
     @ManyToOne
     @JoinColumn(name="counselloer_id")

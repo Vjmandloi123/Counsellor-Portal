@@ -13,7 +13,7 @@ public interface EnquiryService {
 	public DashboardResponseDTO getDashboardInfo(Integer counsellorId);
 	
 	
-	public boolean addenquiry(EnquiryDTO enqDTO, Integer counsellorId);
+	public boolean addEnquiry(EnquiryDTO enqDTO, Integer counsellorId);
 	
 
 	//based on counsellerId all enquires will come
